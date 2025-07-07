@@ -1,0 +1,23 @@
+.tools, .searchBar , .price-range{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+}
+
+#range{
+    margin-left: 10px ;
+}
+
+.tools{
+    background-color: rgba(136, 132, 132, 0.137);
+    align-items: center;
+    border-bottom: 2px solid rgba(76, 76, 77, 0.171);
+
+
+    height: 80px ;
+}
+#search{
+    border: none;
+}

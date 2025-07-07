@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Arial Narrow', Arial, sans-serif
+}
+
+.icon{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(27, 25, 29, 0.877);
+}
+
+
+.image{
+  height: 400px ;
+  width: 100% ;
+}
+.image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+.slider{
+  border: 2px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.card-text{
+  overflow: hidden;
+  height: 200px ;
+}
+
+.product-card {
+  text-align: center;
+  min-height: 600px;
+  max-height: 600px;
+  overflow: hidden;
+}
+.product-card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+.product-card p {
+  height: 200px ;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  /* -webkit-line-clamp: 3; */
+  -webkit-box-orient: horizontal;  
+  overflow: hidden;
+}
+
+.product-card > .Image {
+  height: 200px;
+  width: 100%;
+}
+
+.Image  > img {
+  height: 100%;
+width: 100%;
+object-fit: contain;
+}
+
+.title{
+  
+  height: 53px ;
+  overflow: hidden;
+}
+.product-cart{
+  text-align: center;
+  min-height: 400px;
+}
+.product-cart  > .Image {
+  height: 200px;
+  width: 100%;
+}
+
+.Image-Home{
+  height: 150px;
+  width: 100%;
+}
+
+.Image-Home > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.product-item{
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}

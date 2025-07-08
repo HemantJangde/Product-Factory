@@ -21,3 +21,7 @@
 #search{
     border: none;
 }
+.about{
+    border: 2p xsolid red;
+    margin-bottom: 20px;
+}

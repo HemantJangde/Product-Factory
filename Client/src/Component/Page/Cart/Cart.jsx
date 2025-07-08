@@ -1,28 +1,41 @@
-import React from 'react'
-import {useSelector} from 'react-redux'
+import React from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+
 function Cart() {
-  const cart = useSelector(state=>state.product)
-  console.log(cart);
   
+  const cart = useSelector((state) => state.product);
+
+
   return (
     <>
-     <div className="item-box" >
-    {cart.map((item)=>(
-      <div class="items p-4" key={item.id} >
-      <div class="card   product-cart p-3 " style={{width: "18rem" }} >
-        <div className="Image">
-        <img src={item.image} class="card-img-top" alt="Product Image"/></div>
-        <div class="card-body">
-          <h5 class="card-title title">{item.title}</h5>
-          <h6 class="text-success mb-3">Price: {item.price}</h6>
-          <a href="#" class="btn btn-dark w-100">Buy Now </a>
-        </div>
+
+<Link to='/product'className="mx-5">Back</Link>
+  
+      <div className="item-box">
+        {cart.map((item) => (
+          <div className="items p-4" key={item.id}>
+            <div className="card   product-cart p-3 " style={{ width: "18rem" }}>
+              <div className="Image">
+                <img
+                  src={item.image}
+                  className="card-img-top"
+                  alt="Product Image"
+                />
+              </div>
+              <div className="card-body">
+                <h5 className="card-title title">{item.title}</h5>
+                <h6 className="text-success mb-3">Price: {item.price}</h6>
+                <a href="#" className="btn btn-dark w-100">
+                  Buy Now
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
-    ))}
-    </div>
     </>
-  )
+  );
 }
 
-export default Cart
+export default Cart;

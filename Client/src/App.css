@@ -44,7 +44,7 @@
 .product-card {
   text-align: center;
   min-height: 600px;
-  max-height: 600px;
+  max-height: 640px;
   overflow: hidden;
 }
 .product-card img {
@@ -100,3 +100,20 @@ object-fit: contain;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+.singleproductimg{
+
+  height: 200px ;
+}
+.singleproductimg > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.item2img{
+ 
+  height: 150px;
+  width: 100%;
+}
+
+

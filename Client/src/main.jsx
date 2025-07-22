@@ -12,6 +12,8 @@ import About from './Component/Page/About/About.jsx'
 import Contact from './Component/Page/Contact/Contact.jsx'
 import Signin from './Component/Page/SignIn/Signin.jsx'
 import Cart from './Component/Page/Cart/Cart.jsx'
+import SingelPage from './Component/Page/SinglePage/SingelPage.jsx'
+import Post from './Component/Page/AddProduct/Post.jsx'
 
 
 const route  = createBrowserRouter([{
@@ -35,6 +37,12 @@ const route  = createBrowserRouter([{
   },{
     path:'cart',
     element:<Cart/>
+  },{
+    path:'singlePage/:id',
+    element:<SingelPage/>
+  },{
+    path:'post',
+    element:<Post/>
   },
 ]
 }])

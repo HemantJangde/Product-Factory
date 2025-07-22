@@ -37,18 +37,12 @@ export default function Home() {
 
 <div >
 
-{/* <div className="card m-5" style={{width: '18rem'}}>
-  <img src="..." className="card-img-top" alt="..."/>
-  <div className="card-body">
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div> */}
 <Link to='product' className="container my-5" style={{display:'flex',flexWrap:'wrap',width:'90%',textAlign:'center',justifyContent:'space-around'}} >
 {product.map((data)=>( <div className="card    p-2 product-item" style={{width: "18rem" ,height:'215px ',overflow:'hidden'}}>
   <div className="Image-Home">
         <img src={data.image} className="card-img-top" alt="Product Image"/></div>
   <div className="card-body">
-    {/* <p className="card-text p-3">{data.title}</p> */}
+ 
   </div>
 </div>
 

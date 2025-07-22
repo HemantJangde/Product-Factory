@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Link} from "react-router-dom"
 
 
-function Navbar() {
+function Navbar({ isloggedIn, role }) {
   return (
     <>
    <div className="container 
@@ -19,10 +19,19 @@ text-secondary">
         <li><Link to='cart' className="nav-Link px-2 Link-dark text-decoration-none text-dark">Cart</Link></li>
         <li><Link to='contact' className="nav-Link px-2 Link-dark text-decoration-none text-dark">Contact</Link></li>
         <li><Link to='about' className="nav-Link px-2 Link-dark text-decoration-none text-dark">About</Link></li>
+        <li></li>
+    
       </ul> 
       <div className="col-md-3 text-end">
-        <button type="button" className="btn btn-outline-dark me-2  text-dark">Login</button>
-        <button type="button" className="btn btn-dark"><Link to='signin' className="nav-Link px-2 Link-dark  text-light">Sign-up</Link></button>
+        <button type="button" className="btn btn-dark"><Link to='/cart' className="nav-Link px-2 Link-dark text-decoration-none  text-light"> {isloggedIn? 'Hemant':'Login'} </Link></button>|
+|
+      {role === "Admin" && (
+              <button type="button" className="btn btn-outline-dark ms-2 bg-dark">
+                <Link to="/post" className="text-light text-decoration-none">
+                  Dashboard
+                </Link>
+              </button>
+            )}
       </div>
     </header>
   </div>
